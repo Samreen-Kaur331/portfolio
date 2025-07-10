@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMREEN KAUR PORTFLIO </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" >
+
+
+</head>
+<body>
+<script src="script.js"></script>
+<header>
+    <nav>
+        <div class="left">Samreen's Portfolio</div>
+        <div class = "right">
+            <ul>
+              <li><a href="#">Home</a></li> 
+               <li><a href="#about">About</a></li>
+             <li><a href="#skills">Skills</a></li>   
+               <li><a href="#project">Project</a></li>
+             <li><a href="form.html">Contact</a></li>   
+           
+            </ul>
+            
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="firstSection">
+        <div class="leftSection">Hi, My name is <span class="purple">Samreen Kaur</span> 
+       <div>and I am a  </div>
+        <span id="element"></span><br>
+        <div class="button"></div>
+        <button  class="btn" style="background-color: #886cc9;">  <a href="form.html">Hire Me</a></button>
+       <button class="btn"> <a href="Document1.pdf"download>Resume</a></button>
+</div>
+      
+        <div class="rightSection">
+            <img src="web.png" class="bounce" alt=""  data-aos="zoom-in" data-aos-delay="100">
+        </div>
+    </section>
+
+    <!-- <section class="section2">
+        <h1>Work Experience</h1>
+    </section> -->
+
+    <!-- About Section -->
+
+
+<section id="about" class="aboutSection" data-aos="zoom-in" data-aos-delay="100">
+  <button onclick="bounceGlow()" class="glow-button"  data-aos="zoom-in" data-aos-delay="100">About Me</button>
+
+  
+  <p data-aos="zoom-in" data-aos-delay="200">
+    Hi there! I’m Samreen — a tech enthusiast and web developer in progress 💻✨. I'm learning web development step by step with HTML, CSS, and JavaScript.
+    <br><br>
+    I love turning ideas into beautiful websites. When I’m not coding, I enjoy exploring design trends, watching tech videos, or just learning something new.
+    <br><br>
+    I’m excited to grow as a developer and contribute to impactful projects.
+   </p>
+   </section>
+
+
+   <section id="skills" class="skillsSection">
+  <h2>My Skills</h2>
+  <div class="skillsGrid">
+    <div class="skillCard" data-aos="zoom-in" data-aos-delay="100">HTML5</div>
+    <div class="skillCard" data-aos="zoom-in" data-aos-delay="200">CSS3</div>
+    <div class="skillCard" data-aos="zoom-in" data-aos-delay="300">JavaScript</div>
+    <div class="skillCard" data-aos="zoom-in" data-aos-delay="400">React JS</div>
+    <div class="skillCard" data-aos="zoom-in" data-aos-delay="500">Git & GitHub</div>
+    <div class="skillCard" data-aos="zoom-in" data-aos-delay="600">Responsive Design</div>
+    <div class="skillCard" data-aos="zoom-in" data-aos-delay="700">VS Code</div>
+  </div>
+</section>
+
+
+
+
+<section id="project" class="projectSection">
+  <h2>My Projects</h2>
+
+  ...
+
+
+
+  <div class="projectGrid">
+    <div class="projectCard" data-aos="fade-up" data-aos-delay="100">
+      <img src="p.png" alt="Portfolio Project">
+      <h3>Portfolio Website</h3>
+      <p>This is my personal portfolio built with HTML, CSS, and JavaScript. Fully responsive and clean UI.</p>
+      <div class="projectLinks">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="projectCard"data-aos="fade-up" data-aos-delay="200">
+      <img src="Picture2.png" alt="To-Do App">
+      <h3>To-Do List App</h3>
+      <p>A simple app to manage daily tasks. Features add/delete tasks and local storage support.</p>
+      <div class="projectLinks">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Add more project cards if you like -->
+  </div>
+</section>
+
+   
+
+</main>
+
+
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: [' Web developer'],
+      typeSpeed: 50,
+    });
+  </script>
+
+  <script>
+  function bounceGlow() {
+    const section = document.querySelector('.aboutSection');
+    section.classList.add('bounce');
+    setTimeout(() => {
+      section.classList.remove('bounce');
+    }, 600);
+  }
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element2', {
+      strings: [' My Skills'],
+      typeSpeed: 50,
+    });
+  </script>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

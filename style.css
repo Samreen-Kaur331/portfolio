@@ -1,0 +1,370 @@
+body{
+    background-color: rgb(1, 1, 34);
+    /* background:linear-gradient(135deg,#000428,#004e92); */
+ color: white ; 
+font-family: 'poopins';
+}
+html{
+    
+scroll-behavior: smooth;
+}
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ nav{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(18, 18, 46);
+ }
+ .left{
+    font-size: 1.5rem; 
+    color: white;
+    padding-right: 15%;
+ }
+ nav ul{
+    justify-content: center;
+    
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+    font-size: 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+   color: white;
+   transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+   color:rgb(231, 57, 222);
+   font-size: 1.04rem;
+
+}
+#element{
+    color: blueviolet;
+}
+.firstSection{
+display: flex;
+justify-content: space-around;
+margin:110px 0;
+
+}
+.firstSection >div{
+    width: 30%;
+}
+.leftSection{
+    margin: 30px 0;
+
+    font-size: 3rem;
+}
+.rightSection img{
+    width: 80%;
+   
+}@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-30px); 
+  }
+  60% {
+    transform: translateY(-15px); 
+  }
+}
+
+.bounce {
+  animation: bounce 2s ease;
+}
+	
+
+.purple
+{
+    color: blueviolet;
+}
+ .section2{
+    max-width: 80vw;
+    margin: auto;
+}
+main hr{
+background-color: #9c97f9;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+button{
+   
+    color: white;
+    border : 2px solid white;
+border-radius: 6px;
+    padding: 12px ;
+    cursor:pointer;
+    margin:auto;
+   font-size:20px
+}
+button:hover{
+     transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #4b0082, #2d0b45);
+}
+
+.button{
+   height: 20px;
+   
+}
+
+/* .aboutSection {
+  background-color:rgb(1, 1, 34);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border: 2px solid white;
+  box-shadow: yellow;
+  border-radius: 20px; 
+  margin: 120px;
+
+} */
+
+/* Basic glowing border effect with multi-color */
+.aboutSection {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  background-color: rgb(1, 1, 34);
+
+  border-image: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc, #ffae00) 1;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #ff00cc;
+  transition: all 0.3s ease;  
+
+
+
+
+ position: relative;
+  border-radius: 20px;
+  z-index: 1;
+  margin: 120px auto;
+  margin-top: 10%;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+/* Bouncing animation (triggered class) */
+.bounce {
+  animation: bounceEffect 0.6s ease;
+}
+
+/* Bounce Keyframe */
+@keyframes bounceEffect {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Button Styling */
+.glow-button {
+  margin: 30px auto;
+  padding: 10px 20px;
+  color: white;
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #6003a8, 0 0 30px #c456ae;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.aboutSection h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: blueviolet; 
+  font-family:'poopins';
+}
+
+
+.aboutSection p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  font-family:'poopins';
+}
+
+
+.contactSection {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contactSection h2 {
+  font-size: 2.2rem;
+  color: #4B0082;
+  margin-bottom: 30px;
+}
+
+.contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+.contactForm button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #4B0082;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contactForm button:hover {
+  background-color: #36005f;
+}
+
+.skillsSection {
+  padding: 60px 20px;
+   background-color: rgb(1, 1, 34);
+  color: white;
+  text-align: center;
+}
+
+.skillsSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.skillCard {
+  background: linear-gradient(135deg, #1c1c2b, #20202f);
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.skillCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #4b0082, #2d0b45);
+}
+
+
+#element2{
+    color: blueviolet;
+    font-size: 1.5rem;
+}
+
+
+#element2:hover{
+    color:#c456ae;
+        font-size: 1.7em;
+        cursor: pointer;
+}
+
+.projectSection {
+  padding: 60px 20px;
+  text-align: center;
+   background-color: rgb(1, 1, 34);
+  color: white;
+}
+
+.projectSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.projectCard {
+  background: linear-gradient(135deg, #1c1c2b, #20202f);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.projectCard img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.projectCard h3 {
+  color: #9f7aea;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.projectCard p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.projectLinks a {
+  margin-right: 10px;
+  padding: 10px 15px;
+  background-color: #9f7aea;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.projectLinks a:hover {
+  background-color: #7a50c2;
+}
